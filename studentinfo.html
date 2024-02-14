@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" /> 
+    <link rel="stylesheet" href="studentinfo.css" /> 
+    <link rel="stylesheet" href="task.css">
+    <title></title> 
+</head> 
+  
+<body style="background-color: #f4f4f4;"> 
+    <div id="app"> 
+        <header class="header"> 
+            <h1 style="color:blue">Student Information</h1> 
+            <button class="createEmployee" style="color:#f4f4f4; background-color: blueviolet;"> 
+                Add Student 
+            </button> 
+        </header> 
+  
+        <div class="employees"> 
+            <div class="employees__names"> 
+                <span class="employees__names--title"> 
+                      Student List 
+                  </span> 
+                <div class="employees__names--list"></div> 
+            </div> 
+            <div class="employees__single"> 
+                <div class="employees__single--title"> 
+                   Student Information 
+                </div> 
+                <div class="employees__single--info"></div> 
+            </div> 
+        </div> 
+        <!-- Add Employee Code - START -->
+        <div class="addEmployee"> 
+            <form class="addEmployee_create" style="background-color: lightyellow;"> 
+                <p style="color: blue">Add a new Student</p>
+                <div> 
+                    <input type="text" name="firstName" 
+                           placeholder="First Name" required /> 
+                    <input type="text" name="lastName" 
+                           placeholder="Last Name" required /> 
+                </div> 
+                <input type="text" name="imageUrl" 
+                       placeholder="Image URL (Optional)" /> 
+                <input type="email" name="email" 
+                       placeholder="Email" required /> 
+                <input type="number" name="contactNumber" 
+                       placeholder="Contact" required /> 
+                <input type="number" name="Registration ID" 
+                       placeholder="Registration ID" required /> 
+                <input type="text" name="address" 
+                       placeholder="Address" required /> 
+                <input type="date" name="dob" 
+                       placeholder="Date of Birth" 
+                       class="addEmployee_create--dob" 
+                       required /> 
+                <input type="submit" style="background-color: blueviolet;color:#f4f4f4" 
+                       class="addEmployee_create--submit" 
+                       value="Submit" /> 
+            </form> 
+        </div> 
+        <!-- Add Employee Code - END -->
+    </div> 
+  
+    <script src="studentinfo.js"></script> 
+    <br><br><br> 
+ 
+<div id="taskbar" style="display: flexbox;position:sticky; background-color:f4f4f4">
+    <div class="task" style="border-radius: 50%;"> 
+      <a href="erphome.html"><img src="home.jpg" alt="logo" style="border-color: black; height: 0.7cm;padding-left:1cm;
+       width:0.7cm;" /></a> 
+    </div>
+    <div class="task"> 
+      <a href="comment.html"> <img src="chat.jpg" alt="logo" style="border-color: black; height: 0.7cm; padding-left:6cm;
+       width:0.7cm;" /></a>
+    </div>
+    <div class="task"> 
+      <a href="attendance.html"><img src="attendance.jpg" alt="logo" style="border-color: black; height: 0.7cm;padding-left:8cm;
+       width:0.7cm;" /></a>
+    </div>
+    <a href="payment.html" ><div class="task"> 
+       <img src="payment.jpg" alt="logo" style="border-color: black; height: 0.7cm;padding-left:8cm;
+       width:0.7cm;" />
+    </div></a>
+    <div class="task"> 
+       <a href="setting.html" ><img src="setting.jpg" alt="logo" style="border-color: black; height: 0.7cm;padding-left:6cm;
+       width:0.7cm;" /></a>
+    </div>
+</div>
+</body>
+</html>
